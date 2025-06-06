@@ -1,0 +1,9 @@
+[package]
+name = "tire_monitor_messages"
+version = "0.2.0"
+edition = "2024"
+publish = ["kellnr"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+bincode = "2.0.1"
