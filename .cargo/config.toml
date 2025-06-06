@@ -6,12 +6,6 @@ index = "sparse+http://localhost:8000/api/v1/crates/"
 credential-provider = ["cargo:token"]
 token = "Zy9HhJ02RJmg0GCrgLfaCVfU6IwDfhXD"
 
-[source.crates-io]
-replace-with = "kellnr-cratesio"
-
-[source.kellnr-cratesio]
-registry = "sparse+http://localhost:8000/api/v1/cratesio/"
-
 [profile.release]
 opt-level = "s"
 lto = "fat"
