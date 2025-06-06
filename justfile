@@ -11,3 +11,10 @@ build-image:
 
 publish-image:
 	docker push localhost:5432/tire_monitor:{{CRATE_VERSION}}
+
+publish-crate:
+	cargo publish
+	just build-image
+	just publish-image
+	git tag v{{CRATE_VERSION}}
+
