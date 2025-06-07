@@ -62,6 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       packages: write
+      contents: write
     needs: [build-and-test-debug, build-and-test-release]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
